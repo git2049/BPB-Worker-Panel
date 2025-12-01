@@ -1,22 +1,17 @@
 # ⚙️ Bug fixes and Improvements
 
-- Added `Shadowsocks` and `Trojan` chain proxy support due to growing resources of free configs.
+- Removed restriction for `Fragment length`, you can set minimum to 1 now. #1131
+- Added two more length to `Best Fragment` config: `1-5`, `1-10`. The config now checks 20 main fragment modes to find the best one on ISP.
+- Added `Severe` Fragment mode with `1-5` length and `1-5` interval values.
 
-> [!TIP]
-> Shadowsocks cannot have any transport like websocket, grpc... and cannot have TLS.
-
-- Added `Httpupgrade` transmission support to chain proxies.
-- Fixed WorkerLess bug.
-- Removed `Happ` from supported apps due to various bugs.
-- Updated docs
-- Other bug fixes
+> [!NOTE]
+> These days Fragment on some ISPs stopped working in Iran, you can change `Fragment packet` to `1-1` instead of `tlshello` and test, also you can try to change `Fragment mode` to bypass IR-GFW.
 
 > [!CAUTION]
-> If you already have a Chain Proxy set in panel, after updating to this version you have to clear it, apply and then set it again.
+> If you are upgrading from versions below 3.5.1 to 4, you should get subscriptions from panel again.
 
 > [!CAUTION]
-> sing-box client version should be 1.12.0 or higher
+> sing-box client version should be 1.12.0 or higher.
 
-> [!IMPORTANT]
-> Fragment is disrupted on some ISPs recently, you have to read tutorials and customize Fragment settings, also using MahsaNG is recommended for this subscription.
-> You can set Fragment `length` to 10-20 or `packets` to `1-1` for testing if default settings are not working.
+> [!CAUTION]
+> Xray clients should be updated to the latest version i.e. v2rayNG, v2rayN and Streisand.

@@ -1,4 +1,4 @@
-# 💦 BPB Panel
+# BPB Panel
 
 ![Pages Application](images/panel-overview.jpg)
 
@@ -23,7 +23,7 @@ This project is aimed to provide a user panel to access FREE, SECURE and PRIVATE
 4. **Warp Pro configs:** Optimized Warp for crucial circumstances.
 5. **Fragment support:** Supports Fragment functionality for crucial network situations.
 6. **Comprehensive Routing Rules:** Bypassing Iran/China/Russia and LAN, Blocking QUIC, Porn, Ads, Malwares, Phishing and also bypassing sancitons.
-7. **Chain Proxy:** Capable of adding a chain proxy to fix IP.
+7. **Chain Proxy:** Capable of adding a chain proxy (VLESS, Trojan, Shadowsocks, socks and http) to fix IP.
 8. **Broad client compatibility:** Offers subscription links for Xray, Sing-box and Clash-Mihomo core clients.
 9. **Password-protected panel:** Provides secure and private panel with password protection.
 10. **Fully customizable:** Supports setting up clean IP-domains, Proxy IPs, DNS servers, choosing ports and protocols, Warp endpoints and more.
@@ -44,17 +44,29 @@ This project is aimed to provide a user panel to access FREE, SECURE and PRIVATE
 
 |       Client        |      Version      | Fragment support | Warp Pro support |
 | :-----------------: | :---------------: | :--------------: | :--------------: |
-|     **v2rayNG**     | 1.10.11 or higher | :material-check: | :material-check: |
+|     **v2rayNG**     | 1.10.26 or higher | :material-check: | :material-check: |
 |     **MahsaNG**     |   14 or higher    | :material-check: | :material-check: |
-|     **v2rayN**      | 7.14.6 or higher  | :material-check: | :material-check: |
+|     **v2rayN**      | 7.15.4 or higher  | :material-check: | :material-check: |
 |   **v2rayN-PRO**    |   1.9 or higher   | :material-check: | :material-check: |
 |    **Sing-box**     | 1.12.0 or higher  | :material-check: | :material-close: |
-|    **Streisand**    | 1.6.60 or higher  | :material-check: | :material-check: |
+|    **Streisand**    | 1.6.64 or higher  | :material-check: | :material-check: |
 |   **Clash Meta**    |                   | :material-close: | :material-check: |
 | **Clash Verge Rev** |                   | :material-close: | :material-check: |
 |     **FLClash**     |                   | :material-close: | :material-check: |
 |   **AmneziaVPN**    |                   | :material-close: | :material-check: |
 |    **WG Tunnel**    |                   | :material-close: | :material-check: |
+
+## Environment variables
+
+|   Variable   |               Usage                |     Mandatory      |
+| :----------: | :--------------------------------: | :----------------: |
+|   **UUID**   |             VLESS UUID             | :heavy_check_mark: |
+| **TR_PASS**  |          Trojan Password           | :heavy_check_mark: |
+| **PROXY_IP** | Proxy IP or domain (VLESS, Trojan) |        :x:         |
+|  **PREFIX**  |   NAT64 Prefixes (VLESS, Trojan)   |        :x:         |
+| **SUB_PATH** |         Subscriptions' URI         |        :x:         |
+| **FALLBACK** |  Fallback domain (VLESS, Trojan)   |        :x:         |
+| **DOH_URL**  |              Core DOH              |        :x:         |
 
 ---
 
